@@ -1,0 +1,87 @@
+/* ======================= common ===================== */
+
+/* ======================= App ===================== */
+.App {
+  /* margin: 1rem; */
+  /* padding: 1rem 5rem; */
+  /* background-color: #f8f8f8; */
+}
+/* ====================== Routes ================ */
+
+.routesNav {
+  background-color: white;
+  padding: 0.7rem 5rem;
+  /* display: block; */
+}
+.routesContent {
+  background-color: #f8f8f8;
+  padding: 1rem 5rem;
+}
+/* ====================== Navbar ================ */
+.navbarMainDiv {
+  /* background-color: white; */
+}
+.menu a:hover {
+  color: red;
+}
+.logo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.menu img {
+  width: 3rem;
+  height: 3rem;
+}
+.menu img:hover {
+  background-color: tomato;
+  border-radius: 50%;
+  padding: 0.5rem;
+  /* border: 0.1rem solid tomato; */
+  /* width: 2.8rem;
+  height: 2.8rem; */
+}
+nav li a,
+img {
+  transition: all 0.3s ease-in-out;
+}
+/* ====================== Home ===================== */
+.HomeMainDiv {
+  /* background-color: red; */
+  background-color: #f8f8f8;
+}
+
+/* =============== Hero ================== */
+.heroMainDiv {
+  padding: 1rem;
+}
+.heroRightMainDiv img {
+  border-radius: 50%;
+  width: 92%;
+  /* height: 80%; */
+}
+
+/* ================ Pizza Container ================= */
+.size {
+  background: lightgray;
+}
+
+.add-to-cart {
+  border: 2px solid #fe5f1e;
+  color: #fe5f1e;
+  transition: all 0.3s ease-in-out;
+}
+.add-to-carts :hover {
+  background-color: #fe5f1e;
+  border: 2px solid white;
+  color: white;
+}
+.add-to-cart span:hover {
+  /* background-color: #fe5f1e; */
+  border: 0px transparent;
+}
+
+.item-gap-y {
+  margin-bottom: 4rem;
+  /* margin: 10rem; */
+}
