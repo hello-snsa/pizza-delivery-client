@@ -5,7 +5,7 @@ export default function PizzaContainer({ pizza }) {
         <div>
 
             <div className="w-64 showcase">
-                <img src='/images/pizza.jpg' alt="pizza" className="h-40 mb-4 mx-auto " />
+                <img src='/images/pizza2.jpg' alt="pizza" className="h-40 mb-4 mx-auto " />
                 {/* </div> */}
                 <div className="text-center">
 
