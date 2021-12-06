@@ -85,3 +85,10 @@ img {
   margin-bottom: 4rem;
   /* margin: 10rem; */
 }
+.showcase img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* border: 1rem solid tomato; */
+  cursor: pointer;
+}

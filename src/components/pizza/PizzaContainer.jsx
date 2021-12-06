@@ -4,8 +4,8 @@ export default function PizzaContainer({ pizza }) {
     return (
         <div>
 
-            <div className="w-64">
-                <img src='/images/pizza.png' alt="pizza" className="h-40 mb-4 mx-auto" />
+            <div className="w-64 showcase">
+                <img src='/images/pizza.jpg' alt="pizza" className="h-40 mb-4 mx-auto " />
                 {/* </div> */}
                 <div className="text-center">
 
