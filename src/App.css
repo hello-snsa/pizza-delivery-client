@@ -1,5 +1,10 @@
 /* ======================= common ===================== */
-
+button {
+  transition: all 0.3s ease-in-out;
+}
+:hover {
+  transition: all 0.3s ease-in-out;
+}
 /* ======================= App ===================== */
 .App {
   /* margin: 1rem; */
@@ -91,4 +96,36 @@ img {
   border-radius: 50%;
   /* border: 1rem solid tomato; */
   cursor: pointer;
+}
+
+/* ========================= Cart ================= */
+
+.btn-primary {
+  background-color: #fe5f1e;
+}
+
+.empty-cart a:hover {
+  background-color: #b23301;
+}
+.btn-primaryDiv button:hover {
+  background-color: #b23301;
+}
+.empty-cart img {
+  /* max-width: 80vw; */
+}
+.orderSummary img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.pizza-list img {
+  max-width: 10rem;
+  border-radius: 50%;
+}
+.nonEmptyCart {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.amount {
+  color: #fe5f1e;
 }
