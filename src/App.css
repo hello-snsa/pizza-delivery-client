@@ -134,3 +134,22 @@ img {
 .amount {
   color: #fe5f1e;
 }
+
+/* ==================== Login ==================== */
+.loginFormDiv {
+  margin-top: 4rem;
+  background-color: white;
+}
+.loginFormDiv a {
+  color: #fe5f1e;
+}
+.forgetPass a:hover {
+  color: #b23301;
+}
+
+.registerBtn {
+  background-color: #fe5f1e;
+}
+.registerBtn:hover {
+  background-color: #b23301;
+}
