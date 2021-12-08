@@ -1,8 +1,11 @@
 import React from 'react'
+import { useState } from 'react';
 
 export default function NonEmptyCart() {
 
     let data = [1, 1, 1, 1, 1];
+
+    const [isLogedIn, setIsLogedIn] = useState(!false)
 
 
     return (
@@ -60,12 +63,18 @@ export default function NonEmptyCart() {
                     <br />
                     <input class="border border-gray-400 p-2 w-1/2" type="text" placeholder="Phone Number" />
                     <br />
-                    <button type="submit" className="btn-primary px-6 py-2 rounded-full text-white font-bold mt-6">Order Now</button>
+                    {isLogedIn ?
+                        <button type="submit" className="btn-primary px-6 py-2 rounded-full text-white font-bold mt-6">Order Now</button>
+                        : ""}
                 </form>
             </div>
+            {!isLogedIn ?
+                <div className="text-right">
 
+                    <a href="/" className="text-right inline-block btn-primary px-6 py-2 rounded-full text-white font-bold mt-6 ">Login to continue</a>
 
-
+                </div>
+                : ""}
 
 
         </div>

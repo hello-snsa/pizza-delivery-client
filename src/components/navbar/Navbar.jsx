@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import classes from "../../css/Main.module.css";
 
 export default function Navbar() {
     return (
@@ -7,17 +9,44 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <div className="logo">
-                    <img src="/images/logo.png" alt="compnayLogo"></img>
+                    <NavLink className={(navData) => navData.isActive ? classes.notAct : classes.notAct} to="/home">
+                        <img src="/images/logo.png" alt="compnayLogo"></img>
+                    </NavLink>
                 </div>
+
+
+
                 {/* Menu */}
                 <div className="menu">
                     <ul className="flex items-center">
 
-                        <li className="ml-6" ><a href="#">Menu</a></li>
-                        <li className="ml-6" ><a href="#">Offers</a></li>
-                        <li className="ml-6" ><a href="#">Register</a></li>
-                        <li className="ml-6" ><a href="#">Login</a></li>
-                        <li className="ml-6" ><a href="#" className="inline-block px-4 py-2" ><img src="/images/cart.png" alt="cart" /></a></li>
+                        <li className="ml-6" >
+
+                            <NavLink className={(navData) => navData.isActive ? classes.active : classes.notAct} to="/menu">Menu</NavLink>
+
+                        </li>
+                        <li className="ml-6" >
+
+                            <NavLink className={(navData) => navData.isActive ? classes.active : classes.notAct} to="/offers">Offers</NavLink>
+
+                        </li>
+                        <li className="ml-6" >
+                            <NavLink className={(navData) => navData.isActive ? classes.active : classes.notAct} to="/signup">Register</NavLink>
+                        </li>
+
+                        <li className="ml-6" >
+
+                            <NavLink className={(navData) => navData.isActive ? classes.active : classes.notAct} to="/login">Login</NavLink>
+
+                        </li>
+                        <li className="ml-6" >
+
+                            <NavLink className={(navData) => navData.isActive ? classes.active : classes.notAct} to="/cart">
+                                <img src="/images/cart.png" alt="cart" />
+
+                            </NavLink>
+
+                        </li>
 
 
                     </ul>
